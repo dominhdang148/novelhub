@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'tags', loadChildren: () => import('./features/tags/tags.module').then(m => m.TagsModule) },
   { path: 'updates', loadChildren: () => import('./features/updates/updates.module').then(m => m.UpdatesModule) },
   { path: 'categories', loadChildren: () => import('./features/categories/categories.module').then(m => m.CategoriesModule) },
+  { path: 'about', loadChildren: () => import('./features/about/about.module').then(m => m.AboutModule) },
 ];
 
 @NgModule({

@@ -21,7 +21,10 @@
             [routerLink]="[item.url]"
             [routerLinkActive]="['active']"
           >
-            <fa-icon [icon]="[item.icon.library, item.icon.name]"></fa-icon>
+            <fa-icon
+              *ngIf="item.icon"
+              [icon]="[item.icon.library, item.icon.name]"
+            ></fa-icon>
             <span>
               {{ item.title }}
             </span>

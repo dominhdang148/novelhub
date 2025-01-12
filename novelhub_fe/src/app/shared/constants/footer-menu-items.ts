@@ -19,11 +19,11 @@ export const FOOTER_MENU_ITEMS: MenuItem[] = [
   {
     id: 4,
     title: 'Term of Services',
-    url: '/termofservice',
+    url: '/term-of-service',
   },
   {
     id: 5,
     title: 'Privacy Policy',
-    url: '/privacypolicy',
+    url: '/privacy-policy',
   },
 ];

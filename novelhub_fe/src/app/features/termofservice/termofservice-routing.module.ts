@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about.component';
+import { TermofserviceComponent } from './termofservice.component';
 import { MainLayoutComponent } from 'src/app/layout/main-layout/main-layout.component';
 
 const routes: Routes = [
@@ -10,7 +10,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: AboutComponent,
+        component: TermofserviceComponent,
       },
     ],
   },
@@ -20,4 +20,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AboutRoutingModule {}
+export class TermofserviceRoutingModule {}

@@ -1,0 +1,23 @@
+<footer class="container-fluid bg-black text-white">
+  <div class="container p-3">
+    <!-- Logo -->
+    <div class="d-flex gap-3 align-item-center justify-content-center">
+      <fa-icon size="2x" [icon]="['fas', 'book-journal-whills']"></fa-icon>
+      <span class="fs-5">NovelHub.com</span>
+    </div>
+
+    <!-- Nav -->
+    <div class="mt-3">
+      <ul class="nav justify-content-center">
+        <li *ngFor="let item of menuItems" class="nav-item">
+          <a class="nav-link text-white" [routerLink]="item.url">
+            {{ item.title }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div></div>
+  </div>
+</footer>

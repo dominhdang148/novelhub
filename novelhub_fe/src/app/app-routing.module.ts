@@ -56,7 +56,11 @@ const routes: Routes = [
         (m) => m.TermofserviceModule,
       ),
   },
-  { path: 'privacy-policy', loadChildren: () => import('./features/policy/policy.module').then(m => m.PolicyModule) },
+  {
+    path: 'privacy-policy',
+    loadChildren: () =>
+      import('./features/policy/policy.module').then((m) => m.PolicyModule),
+  },
 ];
 
 @NgModule({

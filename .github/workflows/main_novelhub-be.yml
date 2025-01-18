@@ -30,7 +30,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: java-app
-          path: 'novehub_be/target/*.war'
+          path: 'novehub_be/target/*.jar'
 
   deploy:
     runs-on: ubuntu-latest
@@ -60,5 +60,5 @@ jobs:
         with:
           app-name: 'novelhub-be'
           slot-name: 'Production'
-          package: '*.war'
+          package: '*.jar'
           

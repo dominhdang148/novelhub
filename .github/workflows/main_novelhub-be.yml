@@ -23,13 +23,14 @@ jobs:
           distribution: 'microsoft'
 
       - name: Build with Maven
+        working-directory: ./novelhub_be
         run: mvn clean install
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: java-app
-          path: '${{ github.workspace }}/target/*.war'
+          path: 'novehub_be/target/*.war'
 
   deploy:
     runs-on: ubuntu-latest
@@ -58,7 +59,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'novelhub-be'
-          app_location: "./novelhub_be" 
           slot-name: 'Production'
           package: '*.war'
           

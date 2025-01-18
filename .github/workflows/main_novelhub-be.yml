@@ -58,6 +58,7 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'novelhub-be'
+          app_location: "./novelhub_be" 
           slot-name: 'Production'
           package: '*.war'
           

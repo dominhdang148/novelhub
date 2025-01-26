@@ -18,6 +18,12 @@
     </div>
 
     <!-- Social Media -->
-    <div></div>
+    <div class="mt-3">
+      <ul class="nav justify-content-center">
+        <li *ngFor="let item of socialMediaItems">
+          <a [routerLink]="item.url"></a>
+        </li>
+      </ul>
+    </div>
   </div>
 </footer>
